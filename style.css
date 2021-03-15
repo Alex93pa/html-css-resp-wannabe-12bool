@@ -5,35 +5,44 @@
   margin-top: 100px;
 }
 
+.row::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
 /* BLOCCO LEZIONI */
-#lezioni .row>.left,
-#lezioni .row>.right {
+.col-lg-6{
+  float: left;
+}
+
+.row>.left,
+.row>.right {
   width: 50%;
   float: left;
 }
 
-#lezioni .row img {
+
+.row img {
   /* per centrare orizzontalmente */
   display: block;
   margin-right: auto;
   margin-left: auto;
 }
 
-#lezioni {
+.center{
   text-align: center;
 }
 
 /* BLOCCO STEPS */
-#steps .row>.left,
-#steps .row>.central,
-#steps .row>.right {
+.row>.left,
+.row>.central,
+.row>.right {
   float: left;
   width: 33%;
 }
 
-#steps {
-  text-align: center;
-}
+
 
 /* BLOCCO PERCHE */
 #why {
