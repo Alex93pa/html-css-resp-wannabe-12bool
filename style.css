@@ -22,6 +22,12 @@
   float: left;
 }
 
+@media screen and (max-width:991px){
+  .sabbia{
+    background-color: rgb(231, 180, 70);
+  }
+  
+}
 
 .row img {
   /* per centrare orizzontalmente */
@@ -41,6 +47,9 @@
   float: left;
 }
 
+.col-md-6{
+  float: left;
+}
 
 
 /* BLOCCO PERCHE */
@@ -68,8 +77,17 @@
   clear: both;
 }
 
-.container.grey {
-  background-color: #f9f9f9;
+@media screen and (min-width:992px){
+  .grey{
+  background-color: #dfdfdf;
+  }
+}
+
+@media screen and (max-width:991px){
+  .grey{
+    background-color: rgb(255, 255, 255);
+  }
+  
 }
 
 img {
