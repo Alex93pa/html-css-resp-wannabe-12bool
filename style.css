@@ -16,8 +16,8 @@
   float: left;
 }
 
-.row>.left,
-.row>.right {
+.row>.lezleft,
+.row>.lezright {
   width: 50%;
   float: left;
 }
@@ -35,11 +35,10 @@
 }
 
 /* BLOCCO STEPS */
-.row>.left,
-.row>.central,
-.row>.right {
+.row>.fun1>.funleft,
+.row>.fun2>.funcentral,
+.row>.fun3>.funright {
   float: left;
-  width: 33%;
 }
 
 
