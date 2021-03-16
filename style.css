@@ -1,5 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
 .row {
-  width: 992px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
@@ -22,13 +27,6 @@
   float: left;
 }
 
-@media screen and (max-width:991px){
-  .sabbia{
-    background-color: rgb(231, 180, 70);
-  }
-  
-}
-
 .row img {
   /* per centrare orizzontalmente */
   display: block;
@@ -41,14 +39,11 @@
 }
 
 /* BLOCCO STEPS */
-.row>.fun1>.funleft,
-.row>.fun2>.funcentral,
-.row>.fun3>.funright {
+.row>.funleft,
+.row>.funcenter,
+.row>.funright {
   float: left;
-}
-
-.col-md-6{
-  float: left;
+  width: 33%;
 }
 
 
@@ -77,23 +72,69 @@
   clear: both;
 }
 
-@media screen and (min-width:992px){
-  .grey{
-  background-color: #dfdfdf;
-  }
-}
 
-@media screen and (max-width:991px){
-  .grey{
-    background-color: rgb(255, 255, 255);
-  }
-  
-}
 
 img {
   height: 200px;
+
+}
+
+div.second img,
+div.third img {
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px
 }
 
 .clear {
   clear: both;
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+  
+  .row {
+    margin-top: 0;
+    padding-bottom: 20px;
+  }
+
+  h1 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .sabbia {
+    background-color: rgb(242, 241, 209);
+  }
+
+  img {
+    padding-top: 10px;
+  }
+}
+
+@media all and (max-width: 767px) {
+
+  .row {
+    margin-top: 0;
+    padding-bottom: 20px;
+  }
+
+  h1 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+.sabbia {
+    background-color: rgb(242, 241, 209);
+  }
+
+  img {
+    padding-top: 10px;
+  }
+
+}
+
+@media screen and (min-width:992px){
+  .grey{
+    background-color: lightgrey;
+  }
 }

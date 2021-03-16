@@ -10,6 +10,16 @@
     clear: both;
 }
 
+.row {
+    margin-left: -8;
+    margin-right: -8;
+}
+
+
+[class*="col-"] {
+    float: left;
+    padding: 0 8px;
+}
 
 /* Risoluzione XS */
 
